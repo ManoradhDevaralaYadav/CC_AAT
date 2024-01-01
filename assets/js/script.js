@@ -40,7 +40,7 @@ function initilize(){
                                     <div class="card-body">
                                         <h5 class="card-title">${resEle[i].name}</h5>
                                         <h6 class="card-subtitle mb-2 text-muted">${resEle[i].company}</h6>
-                                        <p class="card-text">Package : ${"&#8377;"+resEle[i].price}</p>
+                                        <p class="card-text">Package : ${resEle[i].price+" LPA"}</p>
                                         <p class="card-text">
                                             CGPA : ${resEle[i].rating["$numberDecimal"]}
                                             <button type="button" class="btn btn-light deletebtn" data-click="delete" data-id=${resEle[i].prod_id}>
